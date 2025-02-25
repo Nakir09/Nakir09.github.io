@@ -1,0 +1,126 @@
+/* === General Page Styling === */
+body {
+    background-color: #f9f9f9;  /* Light gray background */
+    font-family: Arial, sans-serif;
+    padding-top: 80px; /* Pushes content down to prevent navbar overlap */
+}
+
+/* === Navbar Styling === */
+.navbar {
+    background-color: #d0e1f9 !important;  /* Light blue navbar */
+    border-bottom: 2px solid #a9cce3; /* Subtle border for contrast */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;  
+    padding: 15px 20px;
+    height: auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+/* Navbar brand title */
+.navbar-brand {
+    color: #1b4f72 !important; /* Dark blue */
+    font-weight: bold;
+}
+
+/* Navbar links */
+.navbar .navbar-nav .nav-link {
+    color: #1b4f72 !important; /* Dark blue text */
+    padding: 12px 15px;
+    font-size: 16px;
+}
+
+/* Navbar hover effect */
+.navbar .navbar-nav .nav-link:hover {
+    color: #e67e22 !important; /* Orange hover effect */
+}
+
+/* Navbar dropdown menu */
+.navbar .dropdown-menu {
+    background-color: #ffffff !important;  /* Light dropdown background */
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+}
+
+/* Dropdown items */
+.navbar .dropdown-item {
+    color: #1b4f72 !important;
+}
+
+/* Dropdown hover effect */
+.navbar .dropdown-item:hover {
+    background-color: #e67e22 !important;
+    color: #ffffff !important;
+}
+
+/* === Page Titles and Headings === */
+h1 {
+    color: #2c3e50;  /* Dark blue-gray */
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-top: 50px;  /* Adjusts for navbar */
+}
+
+/* Section Titles */
+h2 {
+    color: #1b4f72;  /* Dark blue */
+    border-bottom: 2px solid #1b4f72;
+    padding-bottom: 5px;
+}
+
+/* === Code Blocks Styling === */
+pre {
+    background-color: #ecf0f1;  /* Light gray */
+    border-left: 5px solid #2980b9; /* Blue left border */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* === Sidebar Table of Contents (TOC) === */
+#TOC {
+    background-color: #ffffff;  /* Light sidebar */
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #dcdcdc;
+}
+#TOC a {
+    color: #2c3e50 !important;
+}
+#TOC a:hover {
+    color: #e67e22 !important;
+}
+
+/* === Links Styling === */
+a {
+    color: #2980b9 !important; /* Blue links */
+}
+a:hover {
+    color: #e67e22 !important; /* Orange hover */
+}
+
+/* === Buttons Styling === */
+.btn-primary {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+.btn-primary:hover {
+    background-color: #e67e22;
+    border-color: #e67e22;
+}
+
+/* === Footer Styling === */
+footer {
+    background-color: #d0e1f9; /* Light blue footer */
+    color: #1b4f72;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #a9cce3;
+    margin-top: 30px;
+}
+
+/* === Add Spacing to Main Content === */
+main {
+    margin-top: 90px;
+    padding: 30px;
+}
