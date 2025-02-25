@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "My Quarto Website",
+    "section": "",
+    "text": "Welcome\nHello! My name is Nakir, and I am a PhD candidate in Geospatial Information Sciences at The University of Texas at Dallas. My research focuses on remote sensing, deep learning for crop identification, and spatial data analysis.\nThis website includes: - About Me – Learn more about my research and background. - Future sections (Projects, Publications, etc.)\nFeel free to explore!\n📧 Contact: md.nakir.ahmed.09@gmail.com"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About Me\nI am Nakir, a PhD candidate in Geospatial Information Sciences at The University of Texas at Dallas. My research focuses on remote sensing, deep learning for crop identification, and spatial data analysis. I have experience in Python, R, ArcGIS, and Tableau.\nCurrently, I am working on cassava identification using UAV imagery and exploring different CNN models to evaluate their performance in Guyana.\nContact:\n📧 md.nakir.ahmed.09@gmail.com\n🔗 LinkedIn"
+  }
+]
