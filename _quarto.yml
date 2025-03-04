@@ -1,0 +1,43 @@
+project:
+  type: website
+
+website:
+  title: "Md Nakir Ahmed"
+  navbar:
+    left:
+      - text: "Home"
+        href: index.html
+      - text: "CV"
+        href: cv.pdf
+      - text: "Class Presentations"
+        menu:
+          - href: class_presentations.qmd
+            text: Overview
+      - text: "Assignments"
+        menu:
+          - href: assignments.qmd
+            text: Overview
+      - text: "Labs"
+        menu:
+          - href: labs.qmd
+            text: Overview
+          - href: Lab01.qmd
+            text: Lab 01
+      - text: "Workshops"
+        menu:
+          - href: workshops.qmd
+            text: Overview
+      - text: "Final Project"
+        menu:
+          - href: final_project.qmd
+            text: Overview
+          - href: Nakir_Proposal.pdf
+            text: Project Proposal
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: visual
