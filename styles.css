@@ -1,0 +1,26 @@
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    padding-top: 80px;
+}
+
+.navbar {
+    background-color: #d0e1f9 !important;
+    border-bottom: 2px solid #a9cce3;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 15px 20px;
+    height: auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    color: #1b4f72 !important;
+    font-weight: bold;
+}
+
+a {
+    color: #1b4f72;
+}

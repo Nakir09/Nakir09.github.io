@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.29">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Md Nakir Ahmed">
+
+<title>Assignment 02 – Md Nakir Ahmed</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-0815c480559380816a4d1ea211a47e91.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-cc63fce9873912f1bbbccf05079cc9ea.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Md Nakir Ahmed</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./cv.pdf"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-class-presentations" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Class Presentations</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-class-presentations">    
+        <li>
+    <a class="dropdown-item" href="./KM_Prepare for class 1_Nakir.pdf">
+ <span class="dropdown-text">Prepare for class 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./KM_Prepare for class 2_Nakir.pdf">
+ <span class="dropdown-text">Prepare for class 2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./KM_Prepare for class 3_Nakir.pdf">
+ <span class="dropdown-text">Prepare for class 3</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./KM_Prepare for class 4_Nakir.pdf">
+ <span class="dropdown-text">Prepare for class 4</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./KM_Prepare for class 5_Nakir.pdf">
+ <span class="dropdown-text">Prepare for class 5</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./KM_Prepare for class 6_Nakir.pdf">
+ <span class="dropdown-text">Prepare for class 6</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-assignments" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Assignments</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-assignments">    
+        <li>
+    <a class="dropdown-item" href="./KM_Assignment01_Nakir.pdf">
+ <span class="dropdown-text">Assignment 01</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./KM_Assignment02_Nakir.html">
+ <span class="dropdown-text">Assignment 02</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./KM_Assignment03_Nakir.pdf">
+ <span class="dropdown-text">Assignment 03</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./KM_Assignment04_Nakir.html">
+ <span class="dropdown-text">Assignment 04</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./KM_Assignment05_Nakir.html">
+ <span class="dropdown-text">Assignment 05</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-labs" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Labs</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-labs">    
+        <li>
+    <a class="dropdown-item" href="./Lab01.html">
+ <span class="dropdown-text">Lab 01</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Lab02.html">
+ <span class="dropdown-text">Lab 02</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-workshops" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Workshops</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-workshops">    
+        <li>
+    <a class="dropdown-item" href="./workshops.qmd">
+ <span class="dropdown-text">Workshop Overview</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-final-project" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Final Project</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-final-project">    
+        <li>
+    <a class="dropdown-item" href="./KM_Project_Proposal_Nakir.pdf">
+ <span class="dropdown-text">Final Project Proposal</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./KM_Project_Progress_Nakir.pdf">
+ <span class="dropdown-text">Final Project Progress</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./KM_Project_Presentation_Nakir.pdf">
+ <span class="dropdown-text">Final Project Presentation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./KM_Project_Document_Nakir.pdf">
+ <span class="dropdown-text">Final Project Document</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#lab-01-and-lab-02" id="toc-lab-01-and-lab-02" class="nav-link active" data-scroll-target="#lab-01-and-lab-02">1) Lab 01 and Lab 02</a></li>
+  <li><a href="#load-and-explore-the-teds2016-dataset" id="toc-load-and-explore-the-teds2016-dataset" class="nav-link" data-scroll-target="#load-and-explore-the-teds2016-dataset">2) Load and Explore the TEDS2016 Dataset</a></li>
+  <li><a href="#identify-problems-with-the-dataset" id="toc-identify-problems-with-the-dataset" class="nav-link" data-scroll-target="#identify-problems-with-the-dataset">3) Identify Problems with the Dataset</a></li>
+  <li><a href="#handle-missing-values" id="toc-handle-missing-values" class="nav-link" data-scroll-target="#handle-missing-values">4) Handle Missing Values</a></li>
+  <li><a href="#explore-relationship-between-tondu-and-other-variables" id="toc-explore-relationship-between-tondu-and-other-variables" class="nav-link" data-scroll-target="#explore-relationship-between-tondu-and-other-variables">5) Explore Relationship Between Tondu and Other Variables</a>
+  <ul class="collapse">
+  <li><a href="#visualization-of-relationships" id="toc-visualization-of-relationships" class="nav-link" data-scroll-target="#visualization-of-relationships">Visualization of Relationships</a></li>
+  </ul></li>
+  <li><a href="#explore-the-votetsai-variable" id="toc-explore-the-votetsai-variable" class="nav-link" data-scroll-target="#explore-the-votetsai-variable">6) Explore the votetsai Variable</a></li>
+  <li><a href="#frequency-table-and-bar-chart-for-tondu" id="toc-frequency-table-and-bar-chart-for-tondu" class="nav-link" data-scroll-target="#frequency-table-and-bar-chart-for-tondu">7) Frequency Table and Bar Chart for Tondu</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Assignment 02</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Md Nakir Ahmed </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="lab-01-and-lab-02" class="level2">
+<h2 class="anchored" data-anchor-id="lab-01-and-lab-02">1) Lab 01 and Lab 02</h2>
+<p>Please check the lab section to see <strong>Lab 01</strong> and <strong>Lab 02</strong>.</p>
+<hr>
+</section>
+<section id="load-and-explore-the-teds2016-dataset" class="level2">
+<h2 class="anchored" data-anchor-id="load-and-explore-the-teds2016-dataset">2) Load and Explore the TEDS2016 Dataset</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(haven)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'dplyr'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:stats':
+
+    filter, lag</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(car)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: carData</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'car'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:dplyr':
+
+    recode</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>TEDS_2016 <span class="ot">&lt;-</span> <span class="fu">read_stata</span>(<span class="st">"https://github.com/datageneration/home/blob/master/DataProgramming/data/TEDS_2016.dta?raw=true"</span>)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(TEDS_2016)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 54
+  District      Sex     Age     Edu     Arear   Career  Career8 Ethnic  Party   
+  &lt;dbl+lbl&gt;     &lt;dbl+l&gt; &lt;dbl+l&gt; &lt;dbl+l&gt; &lt;dbl+l&gt; &lt;dbl+l&gt; &lt;dbl+l&gt; &lt;dbl+l&gt; &lt;dbl+lb&gt;
+1 201 [Yi Lan … 2 [Fem… 4 [50-… 4 [Col… 1 [Tai… 1 [Hig… 1 [Civ… 1 [Tai… 25 [Neu…
+2 201 [Yi Lan … 2 [Fem… 2 [30-… 5 [Abo… 1 [Tai… 2 [Low… 3 [CLE… 2 [Bot… 25 [Neu…
+3 201 [Yi Lan … 1 [Mal… 5 [Abo… 5 [Abo… 1 [Tai… 1 [Hig… 1 [Civ… 2 [Bot…  3 [Lea…
+4 201 [Yi Lan … 1 [Mal… 4 [50-… 2 [Jun… 1 [Tai… 4 [WOR… 4 [Lab… 1 [Tai… 25 [Neu…
+5 201 [Yi Lan … 2 [Fem… 5 [Abo… 1 [Bel… 1 [Tai… 3 [FAR… 5 [FAR… 9 [Nor… 25 [Neu…
+6 201 [Yi Lan … 2 [Fem… 5 [Abo… 2 [Jun… 1 [Tai… 2 [Low… 7 [Hou… 1 [Tai…  6 [Som…
+# ℹ 45 more variables: PartyID &lt;dbl+lbl&gt;, Tondu &lt;dbl+lbl&gt;, Tondu3 &lt;dbl+lbl&gt;,
+#   nI2 &lt;dbl+lbl&gt;, votetsai &lt;dbl&gt;, green &lt;dbl&gt;, votetsai_nm &lt;dbl&gt;,
+#   votetsai_all &lt;dbl&gt;, Independence &lt;dbl&gt;, Unification &lt;dbl&gt;, sq &lt;dbl&gt;,
+#   Taiwanese &lt;dbl&gt;, edu &lt;dbl&gt;, female &lt;dbl&gt;, whitecollar &lt;dbl&gt;,
+#   lowincome &lt;dbl&gt;, income &lt;dbl&gt;, income_nm &lt;dbl&gt;, age &lt;dbl&gt;, KMT &lt;dbl&gt;,
+#   DPP &lt;dbl&gt;, npp &lt;dbl&gt;, noparty &lt;dbl&gt;, pfp &lt;dbl&gt;, South &lt;dbl&gt;, north &lt;dbl&gt;,
+#   Minnan_father &lt;dbl&gt;, Mainland_father &lt;dbl&gt;, Econ_worse &lt;dbl&gt;, …</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(TEDS_2016)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>tibble [1,690 × 54] (S3: tbl_df/tbl/data.frame)
+ $ District       : dbl+lbl [1:1690] 201, 201, 201, 201, 201, 201, 201, 201, 201, 201, 201...
+   ..@ label       : chr "District"
+   ..@ format.stata: chr "%10.0g"
+   ..@ labels      : Named num [1:73] 201 401 501 502 701 702 703 704 801 802 ...
+   .. ..- attr(*, "names")= chr [1:73] "Yi Lan County Single District" "Hsinchu County Single District" "Miaoli County 1st District" "Miaoli County 2nd District" ...
+ $ Sex            : dbl+lbl [1:1690] 2, 2, 1, 1, 2, 2, 1, 2, 2, 1, 1, 2, 2, 2, 2, 2, 2, 1,...
+   ..@ label       : chr "Sex"
+   ..@ format.stata: chr "%10.0g"
+   ..@ labels      : Named num [1:2] 1 2
+   .. ..- attr(*, "names")= chr [1:2] "Male" "Female"
+ $ Age            : dbl+lbl [1:1690] 4, 2, 5, 4, 5, 5, 5, 4, 5, 4, 5, 1, 5, 3, 4, 5, 4, 5,...
+   ..@ label       : chr "Age"
+   ..@ format.stata: chr "%10.0g"
+   ..@ labels      : Named num [1:5] 1 2 3 4 5
+   .. ..- attr(*, "names")= chr [1:5] "20-29" "30-39" "40-49" "50-59" ...
+ $ Edu            : dbl+lbl [1:1690] 4, 5, 5, 2, 1, 2, 1, 5, 1, 1, 1, 2, 1, 5, 5, 1, 3, 4,...
+   ..@ label       : chr "Education"
+   ..@ format.stata: chr "%10.0g"
+   ..@ labels      : Named num [1:6] 1 2 3 4 5 9
+   .. ..- attr(*, "names")= chr [1:6] "Below elementary school" "Junior high school" "Senior high school" "College" ...
+ $ Arear          : dbl+lbl [1:1690] 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,...
+   ..@ label       : chr "Area"
+   ..@ format.stata: chr "%10.0g"
+   ..@ labels      : Named num [1:6] 1 2 3 4 5 6
+   .. ..- attr(*, "names")= chr [1:6] "Taipei, New Taipei, Keelung and Yi Lan" "Taoyuan, Hsinchu and Miaoli" "Taichung, Changhua and Nantou" "Yunlin, Chiayi and Tainan" ...
+ $ Career         : dbl+lbl [1:1690] 1, 2, 1, 4, 3, 2, 4, 1, 4, 3, 3, 5, 5, 4, 1, 5, 2, 2,...
+   ..@ label       : chr "Occupations5"
+   ..@ format.stata: chr "%10.0g"
+   ..@ labels      : Named num [1:5] 1 2 3 4 5
+   .. ..- attr(*, "names")= chr [1:5] "Hight-class WHITE COLLAR" "Low-class WHITE COLLAR" "FARMER" "WORKER" ...
+ $ Career8        : dbl+lbl [1:1690] 1, 3, 1, 4, 5, 7, 4, 2, 4, 5, 5, 7, 7, 7, 2, 7, 3, 1,...
+   ..@ label       : chr "Occupation8"
+   ..@ format.stata: chr "%10.0g"
+   ..@ labels      : Named num [1:8] 1 2 3 4 5 6 7 8
+   .. ..- attr(*, "names")= chr [1:8] "Civil servants" "Managers and  Professionals (priv.)" "CLERKS (priv.)" "Labor (priv.)" ...
+ $ Ethnic         : dbl+lbl [1:1690] 1, 2, 2, 1, 9, 1, 2, 1, 1, 2, 1, 1, 2, 1, 2, 9, 2, 2,...
+   ..@ label       : chr "Ethnic"
+   ..@ format.stata: chr "%10.0g"
+   ..@ labels      : Named num [1:4] 1 2 3 9
+   .. ..- attr(*, "names")= chr [1:4] "Taiwanese" "Both" "Chinese" "Noresponse"
+ $ Party          : dbl+lbl [1:1690] 25, 25,  3, 25, 25,  6, 25, 24, 25, 25,  6,  5, 25,  ...
+   ..@ label       : chr "Party Preference"
+   ..@ format.stata: chr "%10.0g"
+   ..@ labels      : Named num [1:26] 1 2 3 4 5 6 7 8 9 10 ...
+   .. ..- attr(*, "names")= chr [1:26] "Strongly support KMT" "Somewhat support KMT" "Lean to KMT" "Somewhat lean to KMT" ...
+ $ PartyID        : dbl+lbl [1:1690] 9, 9, 1, 9, 9, 2, 9, 6, 9, 9, 2, 2, 9, 1, 1, 9, 9, 9,...
+   ..@ label       : chr "Party Identification"
+   ..@ format.stata: chr "%10.0g"
+   ..@ labels      : Named num [1:7] 1 2 3 4 5 6 9
+   .. ..- attr(*, "names")= chr [1:7] "KMT" "DPP" "NP" "PFP" ...
+ $ Tondu          : dbl+lbl [1:1690] 3, 5, 3, 5, 9, 4, 9, 6, 9, 9, 5, 5, 9, 5, 4, 9, 9, 4,...
+   ..@ label       : chr "Position on unification and independence"
+   ..@ format.stata: chr "%10.0g"
+   ..@ labels      : Named num [1:7] 1 2 3 4 5 6 9
+   .. ..- attr(*, "names")= chr [1:7] "Immediate unification" "Maintain the status quo,move toward unification" "Maintain the status quo, decide either unification or independence" "Maintain the status quo forever" ...
+ $ Tondu3         : dbl+lbl [1:1690] 2, 3, 2, 3, 9, 2, 9, 3, 9, 9, 3, 3, 9, 3, 2, 9, 9, 2,...
+   ..@ label       : chr "3 categories of TONDU"
+   ..@ format.stata: chr "%10.0g"
+   ..@ labels      : Named num [1:4] 1 2 3 9
+   .. ..- attr(*, "names")= chr [1:4] "Unification" "Maintain the status quo" "Independence" "Nonresponse"
+ $ nI2            : dbl+lbl [1:1690]  3, 98, 98,  3, 98, 98, 98,  3, 98,  1,  2, 98, 98,  ...
+   ..@ label       : chr "Who is the current the premier of our country?"
+   ..@ format.stata: chr "%10.0g"
+   ..@ labels      : Named num [1:5] 1 2 3 95 98
+   .. ..- attr(*, "names")= chr [1:5] "Correct" "Incorrect" "I know but can't remember the name" "Refuse to answer" ...
+ $ votetsai       : num [1:1690] NA 1 0 NA NA 1 1 1 1 NA ...
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ green          : num [1:1690] 0 0 0 0 0 1 0 1 0 0 ...
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ votetsai_nm    : num [1:1690] NA 1 0 NA NA 1 1 1 1 NA ...
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ votetsai_all   : num [1:1690] 0 1 0 0 0 1 1 1 1 NA ...
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ Independence   : num [1:1690] 0 1 0 1 0 0 0 1 0 0 ...
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ Unification    : num [1:1690] 0 0 0 0 0 0 0 0 0 0 ...
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ sq             : num [1:1690] 1 0 1 0 0 1 0 0 0 0 ...
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ Taiwanese      : num [1:1690] 1 0 0 1 0 1 0 1 1 0 ...
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ edu            : num [1:1690] 4 5 5 2 1 2 1 5 1 1 ...
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ female         : num [1:1690] 1 1 0 0 1 1 0 1 1 0 ...
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ whitecollar    : num [1:1690] 1 1 1 0 0 1 0 1 0 0 ...
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ lowincome      : num [1:1690] 4 4 5 4 3 5 2 5 5 5 ...
+  ..- attr(*, "label")= chr "How serious do you think low income of salaryman?"
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ income         : num [1:1690] 8 7 8 5 5.5 9 1 10 2 5.5 ...
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ income_nm      : num [1:1690] 8 7 8 5 NA 9 1 10 2 NA ...
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ age            : num [1:1690] 59 39 63 55 76 64 75 54 64 59 ...
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ KMT            : num [1:1690] 0 0 1 0 0 0 0 0 0 0 ...
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ DPP            : num [1:1690] 0 0 0 0 0 1 0 0 0 0 ...
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ npp            : num [1:1690] 0 0 0 0 0 0 0 1 0 0 ...
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ noparty        : num [1:1690] 1 1 0 1 1 0 1 0 1 1 ...
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ pfp            : num [1:1690] 0 0 0 0 0 0 0 0 0 0 ...
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ South          : num [1:1690] 0 0 0 0 0 0 0 0 0 0 ...
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ north          : num [1:1690] 1 1 1 1 1 1 1 1 1 1 ...
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ Minnan_father  : num [1:1690] 1 1 1 1 1 1 1 1 1 1 ...
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ Mainland_father: num [1:1690] 0 0 0 0 0 0 0 0 0 0 ...
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ Econ_worse     : num [1:1690] 0 0 1 1 0 1 1 1 1 1 ...
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ Inequality     : num [1:1690] 1 1 1 1 0 1 0 1 1 1 ...
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ inequality5    : num [1:1690] 4 5 5 5 3 5 3 5 5 5 ...
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ econworse5     : num [1:1690] 3 3 4 5 3 4 4 5 5 5 ...
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ Govt_for_public: num [1:1690] 1 1 1 0 0 0 0 0 0 0 ...
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ pubwelf5       : num [1:1690] 5 5 4 1 3 2 2 1 3 2 ...
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ Govt_dont_care : num [1:1690] 0 0 1 1 0 1 1 1 0 1 ...
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ highincome     : num [1:1690] 1 1 1 1 NA 1 0 1 0 NA ...
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ votekmt        : num [1:1690] 0 0 1 0 0 0 0 0 0 0 ...
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ votekmt_nm     : num [1:1690] NA 0 1 NA NA 0 0 0 0 NA ...
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ Blue           : num [1:1690] 0 0 0 0 0 0 0 0 0 0 ...
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ Green          : num [1:1690] 0 0 0 0 0 0 0 0 0 0 ...
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ No_Party       : num [1:1690] 0 0 0 0 0 0 0 0 0 0 ...
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ voteblue       : num [1:1690] 0 0 1 0 0 0 0 0 0 0 ...
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ voteblue_nm    : num [1:1690] NA 0 1 NA NA 0 0 0 0 NA ...
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ votedpp_1      : num [1:1690] NA 1 0 NA NA 1 1 1 1 0 ...
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ votekmt_1      : num [1:1690] NA 0 1 NA NA 0 0 0 0 0 ...
+  ..- attr(*, "format.stata")= chr "%9.0g"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(TEDS_2016)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    District         Sex             Age           Edu            Arear      
+ Min.   : 201   Min.   :1.000   Min.   :1.0   Min.   :1.000   Min.   :1.000  
+ 1st Qu.:1401   1st Qu.:1.000   1st Qu.:2.0   1st Qu.:2.000   1st Qu.:1.000  
+ Median :6406   Median :1.000   Median :3.0   Median :3.000   Median :3.000  
+ Mean   :4661   Mean   :1.486   Mean   :3.3   Mean   :3.334   Mean   :2.744  
+ 3rd Qu.:6604   3rd Qu.:2.000   3rd Qu.:5.0   3rd Qu.:5.000   3rd Qu.:4.000  
+ Max.   :6806   Max.   :2.000   Max.   :5.0   Max.   :9.000   Max.   :6.000  
+                                                                             
+     Career         Career8          Ethnic          Party      
+ Min.   :1.000   Min.   :1.000   Min.   :1.000   Min.   : 1.00  
+ 1st Qu.:1.000   1st Qu.:2.000   1st Qu.:1.000   1st Qu.: 5.00  
+ Median :2.000   Median :4.000   Median :1.000   Median : 7.00  
+ Mean   :2.683   Mean   :3.811   Mean   :1.658   Mean   :13.02  
+ 3rd Qu.:4.000   3rd Qu.:5.000   3rd Qu.:2.000   3rd Qu.:25.00  
+ Max.   :5.000   Max.   :8.000   Max.   :9.000   Max.   :26.00  
+                                                                
+    PartyID          Tondu           Tondu3           nI2       
+ Min.   :1.000   Min.   :1.000   Min.   :1.000   Min.   : 1.00  
+ 1st Qu.:2.000   1st Qu.:3.000   1st Qu.:2.000   1st Qu.: 1.00  
+ Median :2.000   Median :4.000   Median :2.000   Median : 3.00  
+ Mean   :4.522   Mean   :4.127   Mean   :2.667   Mean   :35.13  
+ 3rd Qu.:9.000   3rd Qu.:5.000   3rd Qu.:3.000   3rd Qu.:98.00  
+ Max.   :9.000   Max.   :9.000   Max.   :9.000   Max.   :98.00  
+                                                                
+    votetsai          green         votetsai_nm      votetsai_all   
+ Min.   :0.0000   Min.   :0.0000   Min.   :0.0000   Min.   :0.0000  
+ 1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:0.0000  
+ Median :1.0000   Median :0.0000   Median :1.0000   Median :1.0000  
+ Mean   :0.6265   Mean   :0.3781   Mean   :0.6265   Mean   :0.5478  
+ 3rd Qu.:1.0000   3rd Qu.:1.0000   3rd Qu.:1.0000   3rd Qu.:1.0000  
+ Max.   :1.0000   Max.   :1.0000   Max.   :1.0000   Max.   :1.0000  
+ NA's   :429                       NA's   :429      NA's   :248     
+  Independence     Unification           sq           Taiwanese     
+ Min.   :0.0000   Min.   :0.0000   Min.   :0.0000   Min.   :0.0000  
+ 1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:0.0000  
+ Median :0.0000   Median :0.0000   Median :1.0000   Median :1.0000  
+ Mean   :0.2888   Mean   :0.1225   Mean   :0.5172   Mean   :0.6272  
+ 3rd Qu.:1.0000   3rd Qu.:0.0000   3rd Qu.:1.0000   3rd Qu.:1.0000  
+ Max.   :1.0000   Max.   :1.0000   Max.   :1.0000   Max.   :1.0000  
+                                                                    
+      edu            female        whitecollar       lowincome    
+ Min.   :1.000   Min.   :0.0000   Min.   :0.0000   Min.   :1.000  
+ 1st Qu.:2.000   1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:4.000  
+ Median :3.000   Median :0.0000   Median :1.0000   Median :5.000  
+ Mean   :3.301   Mean   :0.4864   Mean   :0.5373   Mean   :4.343  
+ 3rd Qu.:5.000   3rd Qu.:1.0000   3rd Qu.:1.0000   3rd Qu.:5.000  
+ Max.   :5.000   Max.   :1.0000   Max.   :1.0000   Max.   :5.000  
+ NA's   :10                                                       
+     income         income_nm           age              KMT        
+ Min.   : 1.000   Min.   : 1.000   Min.   : 20.00   Min.   :0.0000  
+ 1st Qu.: 3.000   1st Qu.: 2.000   1st Qu.: 35.00   1st Qu.:0.0000  
+ Median : 5.500   Median : 5.000   Median : 49.00   Median :0.0000  
+ Mean   : 5.324   Mean   : 5.281   Mean   : 49.11   Mean   :0.2296  
+ 3rd Qu.: 7.000   3rd Qu.: 8.000   3rd Qu.: 61.00   3rd Qu.:0.0000  
+ Max.   :10.000   Max.   :10.000   Max.   :100.00   Max.   :1.0000  
+                  NA's   :330                                       
+      DPP              npp             noparty            pfp         
+ Min.   :0.0000   Min.   :0.00000   Min.   :0.0000   Min.   :0.00000  
+ 1st Qu.:0.0000   1st Qu.:0.00000   1st Qu.:0.0000   1st Qu.:0.00000  
+ Median :0.0000   Median :0.00000   Median :0.0000   Median :0.00000  
+ Mean   :0.3497   Mean   :0.02544   Mean   :0.3716   Mean   :0.01893  
+ 3rd Qu.:1.0000   3rd Qu.:0.00000   3rd Qu.:1.0000   3rd Qu.:0.00000  
+ Max.   :1.0000   Max.   :1.00000   Max.   :1.0000   Max.   :1.00000  
+                                                                      
+     South            north        Minnan_father    Mainland_father 
+ Min.   :0.0000   Min.   :0.0000   Min.   :0.0000   Min.   :0.0000  
+ 1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:0.0000  
+ Median :0.0000   Median :0.0000   Median :1.0000   Median :0.0000  
+ Mean   :0.4947   Mean   :0.4799   Mean   :0.7225   Mean   :0.1024  
+ 3rd Qu.:1.0000   3rd Qu.:1.0000   3rd Qu.:1.0000   3rd Qu.:0.0000  
+ Max.   :1.0000   Max.   :1.0000   Max.   :1.0000   Max.   :1.0000  
+                                                                    
+   Econ_worse       Inequality      inequality5      econworse5   
+ Min.   :0.0000   Min.   :0.0000   Min.   :1.000   Min.   :1.000  
+ 1st Qu.:0.0000   1st Qu.:1.0000   1st Qu.:4.000   1st Qu.:3.000  
+ Median :1.0000   Median :1.0000   Median :5.000   Median :4.000  
+ Mean   :0.5544   Mean   :0.9355   Mean   :4.495   Mean   :3.644  
+ 3rd Qu.:1.0000   3rd Qu.:1.0000   3rd Qu.:5.000   3rd Qu.:4.000  
+ Max.   :1.0000   Max.   :1.0000   Max.   :5.000   Max.   :5.000  
+                                                                  
+ Govt_for_public     pubwelf5     Govt_dont_care     highincome    
+ Min.   :0.0000   Min.   :1.000   Min.   :0.0000   Min.   :0.0000  
+ 1st Qu.:0.0000   1st Qu.:2.000   1st Qu.:0.0000   1st Qu.:0.0000  
+ Median :0.0000   Median :3.000   Median :0.0000   Median :1.0000  
+ Mean   :0.4249   Mean   :2.877   Mean   :0.4988   Mean   :0.5765  
+ 3rd Qu.:1.0000   3rd Qu.:4.000   3rd Qu.:1.0000   3rd Qu.:1.0000  
+ Max.   :1.0000   Max.   :5.000   Max.   :1.0000   Max.   :1.0000  
+                                                   NA's   :330     
+    votekmt         votekmt_nm          Blue       Green      No_Party
+ Min.   :0.0000   Min.   :0.0000   Min.   :0   Min.   :0   Min.   :0  
+ 1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:0   1st Qu.:0   1st Qu.:0  
+ Median :0.0000   Median :0.0000   Median :0   Median :0   Median :0  
+ Mean   :0.2053   Mean   :0.2752   Mean   :0   Mean   :0   Mean   :0  
+ 3rd Qu.:0.0000   3rd Qu.:1.0000   3rd Qu.:0   3rd Qu.:0   3rd Qu.:0  
+ Max.   :1.0000   Max.   :1.0000   Max.   :0   Max.   :0   Max.   :0  
+                  NA's   :429                                         
+    voteblue       voteblue_nm       votedpp_1        votekmt_1     
+ Min.   :0.0000   Min.   :0.0000   Min.   :0.0000   Min.   :0.0000  
+ 1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:0.0000  
+ Median :0.0000   Median :0.0000   Median :1.0000   Median :0.0000  
+ Mean   :0.2787   Mean   :0.3735   Mean   :0.5256   Mean   :0.2309  
+ 3rd Qu.:1.0000   3rd Qu.:1.0000   3rd Qu.:1.0000   3rd Qu.:0.0000  
+ Max.   :1.0000   Max.   :1.0000   Max.   :1.0000   Max.   :1.0000  
+                  NA's   :429      NA's   :187      NA's   :187     </code></pre>
+</div>
+</div>
+<hr>
+</section>
+<section id="identify-problems-with-the-dataset" class="level2">
+<h2 class="anchored" data-anchor-id="identify-problems-with-the-dataset">3) Identify Problems with the Dataset</h2>
+<p>We identified missing values in the dataset using <code>colSums(is.na(...))</code>. This tells us how many values are missing per column, which is important before running any models or summaries.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">colSums</span>(<span class="fu">is.na</span>(TEDS_2016))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>       District             Sex             Age             Edu           Arear 
+              0               0               0               0               0 
+         Career         Career8          Ethnic           Party         PartyID 
+              0               0               0               0               0 
+          Tondu          Tondu3             nI2        votetsai           green 
+              0               0               0             429               0 
+    votetsai_nm    votetsai_all    Independence     Unification              sq 
+            429             248               0               0               0 
+      Taiwanese             edu          female     whitecollar       lowincome 
+              0              10               0               0               0 
+         income       income_nm             age             KMT             DPP 
+              0             330               0               0               0 
+            npp         noparty             pfp           South           north 
+              0               0               0               0               0 
+  Minnan_father Mainland_father      Econ_worse      Inequality     inequality5 
+              0               0               0               0               0 
+     econworse5 Govt_for_public        pubwelf5  Govt_dont_care      highincome 
+              0               0               0               0             330 
+        votekmt      votekmt_nm            Blue           Green        No_Party 
+              0             429               0               0               0 
+       voteblue     voteblue_nm       votedpp_1       votekmt_1 
+              0             429             187             187 </code></pre>
+</div>
+</div>
+<hr>
+</section>
+<section id="handle-missing-values" class="level2">
+<h2 class="anchored" data-anchor-id="handle-missing-values">4) Handle Missing Values</h2>
+<p>We used <code>na.omit()</code> to remove rows with missing values. This ensures we’re working with complete cases and helps prevent errors in analysis. After removal, we confirmed no missing values remain.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>TEDS_2016_cleaned <span class="ot">&lt;-</span> <span class="fu">na.omit</span>(TEDS_2016)</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">colSums</span>(<span class="fu">is.na</span>(TEDS_2016_cleaned))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>       District             Sex             Age             Edu           Arear 
+              0               0               0               0               0 
+         Career         Career8          Ethnic           Party         PartyID 
+              0               0               0               0               0 
+          Tondu          Tondu3             nI2        votetsai           green 
+              0               0               0               0               0 
+    votetsai_nm    votetsai_all    Independence     Unification              sq 
+              0               0               0               0               0 
+      Taiwanese             edu          female     whitecollar       lowincome 
+              0               0               0               0               0 
+         income       income_nm             age             KMT             DPP 
+              0               0               0               0               0 
+            npp         noparty             pfp           South           north 
+              0               0               0               0               0 
+  Minnan_father Mainland_father      Econ_worse      Inequality     inequality5 
+              0               0               0               0               0 
+     econworse5 Govt_for_public        pubwelf5  Govt_dont_care      highincome 
+              0               0               0               0               0 
+        votekmt      votekmt_nm            Blue           Green        No_Party 
+              0               0               0               0               0 
+       voteblue     voteblue_nm       votedpp_1       votekmt_1 
+              0               0               0               0 </code></pre>
+</div>
+</div>
+<hr>
+</section>
+<section id="explore-relationship-between-tondu-and-other-variables" class="level2">
+<h2 class="anchored" data-anchor-id="explore-relationship-between-tondu-and-other-variables">5) Explore Relationship Between Tondu and Other Variables</h2>
+<p>We ran a linear regression to examine how <strong>Tondu</strong> is affected by predictors like <strong>gender</strong>, <strong>party support (DPP)</strong>, <strong>age</strong>, <strong>income</strong>, <strong>education</strong>, <strong>ethnic identity</strong>, and <strong>economic perception</strong>.</p>
+<p>The regression model helps quantify which variables have significant effects on Tondu.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>TEDS_2016_cleaned<span class="sc">$</span>female <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(TEDS_2016_cleaned<span class="sc">$</span>female)</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>TEDS_2016_cleaned<span class="sc">$</span>DPP <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(TEDS_2016_cleaned<span class="sc">$</span>DPP)</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>TEDS_2016_cleaned<span class="sc">$</span>Taiwanese <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(TEDS_2016_cleaned<span class="sc">$</span>Taiwanese)</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>TEDS_2016_cleaned<span class="sc">$</span>Econ_worse <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(TEDS_2016_cleaned<span class="sc">$</span>Econ_worse)</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="fu">lm</span>(Tondu <span class="sc">~</span> female <span class="sc">+</span> DPP <span class="sc">+</span> age <span class="sc">+</span> income <span class="sc">+</span> edu <span class="sc">+</span> Taiwanese <span class="sc">+</span> Econ_worse, <span class="at">data =</span> TEDS_2016_cleaned)</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = Tondu ~ female + DPP + age + income + edu + Taiwanese + 
+    Econ_worse, data = TEDS_2016_cleaned)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.4565 -1.0357 -0.0931  0.7639  5.8369 
+
+Coefficients:
+              Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)  3.5696493  0.2952361  12.091  &lt; 2e-16 ***
+female1      0.2033016  0.0847726   2.398   0.0166 *  
+DPP1         0.3935885  0.0927837   4.242 2.41e-05 ***
+age         -0.0003988  0.0034532  -0.115   0.9081    
+income      -0.0351503  0.0150094  -2.342   0.0194 *  
+edu         -0.0641217  0.0393935  -1.628   0.1039    
+Taiwanese1   0.9346107  0.0962575   9.709  &lt; 2e-16 ***
+Econ_worse1 -0.1535299  0.0872766  -1.759   0.0788 .  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 1.363 on 1066 degrees of freedom
+Multiple R-squared:  0.163, Adjusted R-squared:  0.1575 
+F-statistic: 29.66 on 7 and 1066 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+</div>
+<section id="visualization-of-relationships" class="level3">
+<h3 class="anchored" data-anchor-id="visualization-of-relationships">Visualization of Relationships</h3>
+<p>We used boxplots to explore how the variable <strong>Tondu</strong> (support for unification or independence) varies by categorical variables such as <strong>gender</strong> and <strong>DPP affiliation</strong>.</p>
+<ul>
+<li>The first plot shows differences in Tondu scores between male and female respondents.</li>
+<li>The second plot compares Tondu scores for people who do or do not support the DPP.</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(TEDS_2016_cleaned, <span class="fu">aes</span>(<span class="at">x =</span> female, <span class="at">y =</span> Tondu, <span class="at">fill =</span> female)) <span class="sc">+</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Tondu by Gender"</span>, <span class="at">x =</span> <span class="st">"Female"</span>, <span class="at">y =</span> <span class="st">"Tondu"</span>) <span class="sc">+</span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="KM_Assignment02_Nakir_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(TEDS_2016_cleaned, <span class="fu">aes</span>(<span class="at">x =</span> DPP, <span class="at">y =</span> Tondu, <span class="at">fill =</span> DPP)) <span class="sc">+</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Tondu by DPP Affiliation"</span>, <span class="at">x =</span> <span class="st">"DPP"</span>, <span class="at">y =</span> <span class="st">"Tondu"</span>) <span class="sc">+</span></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="KM_Assignment02_Nakir_files/figure-html/unnamed-chunk-5-2.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="explore-the-votetsai-variable" class="level2">
+<h2 class="anchored" data-anchor-id="explore-the-votetsai-variable">6) Explore the votetsai Variable</h2>
+<p>The variable <code>votetsai</code> shows whether a respondent voted for Tsai Ing-wen. A bar chart helps us understand how common support for Tsai is among the respondents.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="fu">na.omit</span>(TEDS_2016_cleaned), <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">factor</span>(votetsai))) <span class="sc">+</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">fill =</span> <span class="st">"steelblue"</span>) <span class="sc">+</span></span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Distribution of votetsai"</span>, <span class="at">x =</span> <span class="st">"Vote for Tsai Ing-wen"</span>, <span class="at">y =</span> <span class="st">"Count"</span>) <span class="sc">+</span></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="KM_Assignment02_Nakir_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="frequency-table-and-bar-chart-for-tondu" class="level2">
+<h2 class="anchored" data-anchor-id="frequency-table-and-bar-chart-for-tondu">7) Frequency Table and Bar Chart for Tondu</h2>
+<p>To better understand the distribution of political preferences in Taiwan, we recoded the numeric <strong>Tondu</strong> variable into labeled categories such as: - “Unification now”, “Independence now”, “Status quo forever”, etc.</p>
+<p>Then we used a bar chart to display the frequency of each preference. This helps visually compare how common each political stance is in the dataset.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>TEDS_2016<span class="sc">$</span>Tondu <span class="ot">&lt;-</span> <span class="fu">factor</span>(TEDS_2016<span class="sc">$</span>Tondu,</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>                          <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"Unification now"</span>,</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>                                     <span class="st">"Status quo, unif. in future"</span>,</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>                                     <span class="st">"Status quo, decide later"</span>,</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>                                     <span class="st">"Status quo forever"</span>,</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>                                     <span class="st">"Status quo, indep. in future"</span>,</span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>                                     <span class="st">"Independence now"</span>,</span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>                                     <span class="st">"No response"</span>))</span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(TEDS_2016<span class="sc">$</span>Tondu)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+             Unification now  Status quo, unif. in future 
+                          27                          180 
+    Status quo, decide later           Status quo forever 
+                         546                          328 
+Status quo, indep. in future             Independence now 
+                         380                          108 
+                 No response 
+                         121 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="fu">data.frame</span>(<span class="at">Tondu =</span> TEDS_2016<span class="sc">$</span>Tondu), <span class="fu">aes</span>(<span class="at">x =</span> Tondu)) <span class="sc">+</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">fill =</span> <span class="st">"coral"</span>) <span class="sc">+</span></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Bar Chart of Tondu Responses"</span>, <span class="at">x =</span> <span class="st">"Tondu"</span>, <span class="at">y =</span> <span class="st">"Count"</span>) <span class="sc">+</span></span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="KM_Assignment02_Nakir_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
